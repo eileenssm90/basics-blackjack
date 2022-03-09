@@ -426,6 +426,7 @@ var main = function (input) {
         "<br><br>Comp: " +
         imageOfCompCards +
         preamble(playerHandValue, compHandValue);
+
       // displayPlayerAndDealerHands(playerHand, compHand);
     } else if (playerHasBlackJack == false && compHasBlackJack == true) {
       gameMode = "drawCard";
@@ -546,7 +547,6 @@ var main = function (input) {
         "<br><br>Comp: " +
         imageOfCompCards +
         preamble(playerHandValue, compHandValue);
-      gameMode == "drawCard";
       // displayPlayerAndDealerHands(playerHand, compHand);
     }
 
@@ -559,7 +559,6 @@ var main = function (input) {
         "<br><br>Comp: " +
         imageOfCompCards +
         preamble(playerHandValue, compHandValue);
-      gameMode == "drawCard";
       // displayPlayerAndDealerHands(playerHand, compHand);
     }
 
@@ -573,8 +572,8 @@ var main = function (input) {
         imageOfCompCards +
         preamble(playerHandValue, compHandValue);
       // displayPlayerAndDealerHands(playerHand, compHand);
-      gameMode = "drawCard";
     }
+    gameMode = "drawCard";
     return myOutputValue;
   }
 
